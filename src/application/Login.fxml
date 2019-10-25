@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" minHeight="360.0" minWidth="480.0" prefHeight="477.0" prefWidth="645.0" style="-fx-background-color: #2C3C53;" styleClass="background-anime" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+  <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/logo.png" />
+         </image>
+         <VBox.margin>
+            <Insets top="60.0" />
+         </VBox.margin>
+      </ImageView>
+      <VBox maxWidth="600.0" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Correo electrónico" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" top="40.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+            <Label text="Contraseña" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" top="40.0" />
+               </padding>
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password">
+               <padding>
+                  <Insets bottom="6.0" left="12.0" right="12.0" top="6.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font></PasswordField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="60.0" left="120.0" right="120.0" />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <Button id="login" mnemonicParsing="false" onAction="#tryToLogin" style="-fx-background-color: #ffc900; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 2);" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="15.0" left="45.0" right="45.0" top="15.0" />
+         </padding>
+         <VBox.margin>
+            <Insets bottom="60.0" />
+         </VBox.margin>
+      </Button>
+  </children>
+</VBox>
